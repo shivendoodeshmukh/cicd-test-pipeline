@@ -21,7 +21,7 @@ class DemoHandler(BaseHTTPRequestHandler):
             body = files("cicd_demo").joinpath("resources/index.html").read_bytes()
             self.respond(200, body, "text/html; charset=utf-8")
         elif request.path == "/health":
-            self.respond_json(200, {"status": "ok", "version": version("cicd-demo")})
+            self.respond_json(201, {"status": "ok", "version": version("cicd-demo")})
         elif request.path == "/api/quote":
             try:
                 values = parse_qs(request.query, keep_blank_values=True).get("subtotal_cents", [])
