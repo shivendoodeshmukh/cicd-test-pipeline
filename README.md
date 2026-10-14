@@ -142,6 +142,7 @@ After changing the package version, change the image tag and expected version to
 - [Hands-on labs](docs/WORKSHOP.md): break/fix CI, packaging, release promotion, approvals, and rollback.
 - [Instructor guide](docs/INSTRUCTOR.md): a suggested session, checkpoints, and discussion questions.
 
+
 | File | Purpose |
 | --- | --- |
 | `src/cicd_demo/shipping.py` | Small business rules to change |
