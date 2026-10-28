@@ -86,6 +86,6 @@ jobs:
         if: steps.check-secret.outputs.has_secret == 'true'
         uses: azure/webapps-deploy@v2
         with:
-          app-name: ${{ vars.AZURE_WEBAPP_NAME || 'cicd-fastapi-app' }}
+          app-name: "cd247"
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           images: ${{ needs.build-and-push.outputs.image_name }}:latest
